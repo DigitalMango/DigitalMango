@@ -79,6 +79,8 @@
 
 <section id="home" class="relative h-screen overflow-hidden">
 
+<!--  Seccion HERO-->
+
   <!-- Imagen de fondo -->
   <img src="https://wallpapercave.com/wp/wp2756455.jpg"
        alt="Fondo mango"
@@ -89,12 +91,17 @@
 
   <!-- Contenedor centrado -->
   <div class="relative z-20 flex items-center justify-center h-full px-4">
-    <div class="text-center text-orange max-w-4xl">
+    <div class="text-center text-white max-w-4xl">
       <h1 class="text-5xl font-extrabold mb-6">Websites que impulsan tu marca</h1>
       <p class="text-xl mb-8">En Digital Mango diseñamos y desarrollamos sitios web modernos, rápidos y pensados para hacer crecer tu marca.</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="#" class="bg-white text-orange-600 font-bold py-3 px-6 rounded-lg">Empezá ahora</a>
-        <a href="#projects" class="border border-white py-3 px-6 rounded-lg font-bold">Ver nuestros proyectos</a>
+        <a href="#" class="bg-white text-orange-600 hover:bg-orange-100 font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+          Empezá ahora
+        </a>
+
+        <a href="#projects" class="bg-orange-500 text-white hover:bg-orange-600 py-3 px-6 rounded-lg font-bold transition-colors duration-300">
+          Ver nuestros proyectos
+        </a>
       </div>
     </div>
   </div>
@@ -287,17 +294,19 @@
       </div>
 
 
-      <div class="text-center mt-12">
-        <a href="#" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-orange-400 hover:bg-orange-600 transition">
-          Conocé más
-          <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-      </div>
+    </div> <!-- ← Esta línea cierra el grid -->
+
+    <!-- Botón centrado fuera del grid -->
+    <div class="w-full flex justify-center mt-12">
+      <a href="#" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-orange-400 hover:bg-orange-600 transition">
+        Conocé más
+        <i class="fas fa-arrow-right ml-2"></i>
+      </a>
     </div>
 </section>
 
 <!-- Stats Section -->
-<section class="py-16 bg-amber-400 text-white">
+<section class="py-16 bg-gradient-to-r from-[#F44336] to-[#FFCA28] text-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-4 gap-8 text-center">
       <div class="py-6">
@@ -314,7 +323,7 @@
       </div>
       <div class="py-6">
         <div class="text-4xl font-bold mb-2" id="coffee-count">0</div>
-        <div class="text-grey-50">Gooning sessions</div>
+        <div class="text-grey-50">Commits</div>
       </div>
     </div>
   </div>
@@ -454,20 +463,20 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
-              <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition">
+              <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition">
             </div>
             <div>
               <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
-              <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition">
+              <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg  focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition">
             </div>
           </div>
           <div>
             <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Asunto</label>
-            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition">
+            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg  focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition">
           </div>
           <div>
             <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
-            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition"></textarea>
+            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg  focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition"></textarea>
           </div>
           <div>
             <button type="submit" class="w-full bg-gradient-to-r from-[#F44336] to-[#FFCA28] text-white px-6 py-4 rounded-lg font-medium hover:from-red-700 hover:to-yellow-400 transition duration-300">
@@ -532,7 +541,7 @@
 </section>
 
 <!-- Newsletter Section -->
-<section class="py-16 bg-gradient-to-r from-[#FF9800] to-[#4CAF50] text-white">
+<section class="py-16 bg-gradient-to-r from-[#F44336] to-[#FFCA28] text-white">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h2 class="text-2xl md:text-3xl font-bold mb-4">Mantente al tanto de nuestros servicios y mejoras</h2>
     <p class="text-orange-100 mb-8 max-w-2xl mx-auto">
@@ -667,13 +676,13 @@
   }
 
   // Start counters when stats section is in view
-  const statsSection = document.querySelector('section.bg-amber-400');
+  const statsSection = document.querySelector('section.bg-gradient-to-r.from-\\[\\#F44336\\].to-\\[\\#FFCA28\\]');
   const observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
       animateValue('clients-count', 0, 2, 2000);
       animateValue('projects-count', 0, 2, 2000);
       animateValue('awards-count', 0, 1, 2000);
-      animateValue('coffee-count', 0, 1002, 2000);
+      animateValue('coffee-count', 0, 19, 2000);
       observer.unobserve(statsSection);
     }
   }, {threshold: 0.5});
