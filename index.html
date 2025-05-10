@@ -77,62 +77,56 @@
   </div>
 </nav>
 
-<!-- Hero Section -->
-<section id="home" class="hero-gradient pt-32 pb-20 md:pt-40 md:pb-32 px-4">
-  <div class="max-w-7xl mx-auto">
-    <div class="flex flex-col md:flex-row items-center">
-      <div class="md:w-1/2 mb-12 md:mb-0">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-          Websites que impulsan tu marca
-        </h1>
-        <p class="text-xl text-indigo-100 mb-8">
-          En Digital Mango diseñamos y desarrollamos sitios web modernos, rápidos y pensados para hacer crecer tu marca.        </p>
-        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-          <a href="#contact" class="bg-white text-indigo-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 text-center">
-            Empezá ahora
-          </a>
-          <a href="#work" class="border-2 border-white text-white hover:bg-white hover:bg-opacity-10 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 text-center">
-            Ver nuestros proyectos
-          </a>
-        </div>
-      </div>
-      <div class="md:w-1/2 flex justify-center">
-        <img src="https://illustrations.popsy.co/amber/responsive-design.svg" alt="Web Design Illustration" class="w-full max-w-md animate-float">
+<section id="home" class="relative h-screen overflow-hidden">
+
+  <!-- Imagen de fondo -->
+  <img src="https://wallpapercave.com/wp/wp2756455.jpg"
+       alt="Fondo mango"
+       class="absolute top-0 left-0 w-full h-full object-cover z-0" />
+
+  <!-- Capa oscura con difuminado -->
+  <div class="absolute top-0 left-0 w-full h-full bg-white/40 backdrop-blur-sm z-25"></div>
+
+  <!-- Contenedor centrado -->
+  <div class="relative z-20 flex items-center justify-center h-full px-4">
+    <div class="text-center text-orange max-w-4xl">
+      <h1 class="text-5xl font-extrabold mb-6">Websites que impulsan tu marca</h1>
+      <p class="text-xl mb-8">En Digital Mango diseñamos y desarrollamos sitios web modernos, rápidos y pensados para hacer crecer tu marca.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#" class="bg-white text-orange-600 font-bold py-3 px-6 rounded-lg">Empezá ahora</a>
+        <a href="#projects" class="border border-white py-3 px-6 rounded-lg font-bold">Ver nuestros proyectos</a>
       </div>
     </div>
   </div>
-  <div class="text-center mt-16 scroll-down">
-    <a href="#services" class="text-white text-2xl">
-      <i class="fas fa-chevron-down"></i>
-    </a>
-  </div>
+
 </section>
 
-<!-- Clients Section -->
-<section class="py-12 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-center text-gray-500 text-sm font-semibold uppercase tracking-wider mb-8">
-      Trusted by industry leaders
-    </h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
-      <div class="flex justify-center">
-        <img src="https://logo.clearbit.com/airbnb.com" alt="Airbnb" class="h-12 opacity-70 hover:opacity-100 transition">
-      </div>
-      <div class="flex justify-center">
-        <img src="https://logo.clearbit.com/netflix.com" alt="Netflix" class="h-10 opacity-70 hover:opacity-100 transition">
-      </div>
-      <div class="flex justify-center">
-        <img src="https://logo.clearbit.com/shopify.com" alt="Shopify" class="h-10 opacity-70 hover:opacity-100 transition">
-      </div>
-      <div class="flex justify-center">
-        <img src="https://logo.clearbit.com/spotify.com" alt="Spotify" class="h-12 opacity-70 hover:opacity-100 transition">
-      </div>
-      <div class="flex justify-center col-span-2 md:col-span-1">
-        <img src="https://logo.clearbit.com/uber.com" alt="Uber" class="h-10 opacity-70 hover:opacity-100 transition">
-      </div>
-    </div>
-  </div>
-</section>
+
+<!--&lt;!&ndash; Clients Section &ndash;&gt;-->
+<!--<section class="py-12 bg-gray-50">-->
+<!--  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">-->
+<!--    <h2 class="text-center text-gray-500 text-sm font-semibold uppercase tracking-wider mb-8">-->
+<!--      Trusted by industry leaders-->
+<!--    </h2>-->
+<!--    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">-->
+<!--      <div class="flex justify-center">-->
+<!--        <img src="https://logo.clearbit.com/airbnb.com" alt="Airbnb" class="h-12 opacity-70 hover:opacity-100 transition">-->
+<!--      </div>-->
+<!--      <div class="flex justify-center">-->
+<!--        <img src="https://logo.clearbit.com/netflix.com" alt="Netflix" class="h-10 opacity-70 hover:opacity-100 transition">-->
+<!--      </div>-->
+<!--      <div class="flex justify-center">-->
+<!--        <img src="https://logo.clearbit.com/shopify.com" alt="Shopify" class="h-10 opacity-70 hover:opacity-100 transition">-->
+<!--      </div>-->
+<!--      <div class="flex justify-center">-->
+<!--        <img src="https://logo.clearbit.com/spotify.com" alt="Spotify" class="h-12 opacity-70 hover:opacity-100 transition">-->
+<!--      </div>-->
+<!--      <div class="flex justify-center col-span-2 md:col-span-1">-->
+<!--        <img src="https://logo.clearbit.com/uber.com" alt="Uber" class="h-10 opacity-70 hover:opacity-100 transition">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 
 <!-- Services Section -->
 <section id="services" class="py-20 bg-white">
@@ -278,28 +272,28 @@
       </div>
 
       <!-- Project 3 -->
-     <div class="group relative overflow-hidden rounded-xl shadow-lg">
-  <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGF3fGVufDB8fDB8fHww" alt="Project 3" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-  <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-  <div class="absolute bottom-0 left-0 p-6 text-white">
-    <h3 class="text-xl font-bold mb-1">Despacho Muñoz Herrera</h3>
-    <p class="text-gray-200">Diseño Web, Development</p>
-  </div>
-  <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-black bg-opacity-60">
-    <a href="https://alipixeled.github.io/DespachoMunozHerrera/" target="_blank" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-600 hover:text-white transition">
-      Explorá los detalles
-    </a>
-  </div>
-</div>
+      <div class="group relative overflow-hidden rounded-xl shadow-lg">
+        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGF3fGVufDB8fDB8fHww" alt="Project 3" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+        <div class="absolute bottom-0 left-0 p-6 text-white">
+          <h3 class="text-xl font-bold mb-1">Despacho Muñoz Herrera</h3>
+          <p class="text-gray-200">Diseño Web, Development</p>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-black bg-opacity-60">
+          <a href="https://alipixeled.github.io/DespachoMunozHerrera/" target="_blank" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-600 hover:text-white transition">
+            Explorá los detalles
+          </a>
+        </div>
+      </div>
 
 
-    <div class="text-center mt-12">
-      <a href="#" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-orange-400 hover:bg-orange-600 transition">
-        Conocé más
-        <i class="fas fa-arrow-right ml-2"></i>
-      </a>
+      <div class="text-center mt-12">
+        <a href="#" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-orange-400 hover:bg-orange-600 transition">
+          Conocé más
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
     </div>
-  </div>
 </section>
 
 <!-- Stats Section -->
@@ -326,83 +320,83 @@
   </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <span class="text-indigo-600 font-semibold text-lg">TESTIMONIOS</span>
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">
-        ¿Qué opinan nuestros clientes de DigitalMango?
-      </h2>
-      <p class="max-w-2xl mx-auto text-gray-600 text-lg">
-        No solo confíes en nosotros, escuchá lo que dicen nuestros clientes satisfechos. Soluciones personalizadas para ti.      </p>
-    </div>
+<!--&lt;!&ndash; Testimonials Section &ndash;&gt;-->
+<!--<section class="py-20 bg-white">-->
+<!--  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">-->
+<!--    <div class="text-center mb-16">-->
+<!--      <span class="text-indigo-600 font-semibold text-lg">TESTIMONIOS</span>-->
+<!--      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">-->
+<!--        ¿Qué opinan nuestros clientes de DigitalMango?-->
+<!--      </h2>-->
+<!--      <p class="max-w-2xl mx-auto text-gray-600 text-lg">-->
+<!--        No solo confíes en nosotros, escuchá lo que dicen nuestros clientes satisfechos. Soluciones personalizadas para ti.      </p>-->
+<!--    </div>-->
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Testimonial 1 -->
-      <div class="testimonial-card bg-gray-50 rounded-xl p-8 shadow-md">
-        <div class="flex items-center mb-6">
-          <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover">
-          <div class="ml-4">
-            <h4 class="font-bold text-gray-900">Flor de Molina</h4>
-            <p class="text-indigo-600">CEO, Gmonster.INC</p>
-          </div>
-        </div>
-        <p class="text-gray-600 mb-6">
-          DigitalMango transformó por completo nuestra presencia online. Nuestro nuevo sitio web ha incrementado las conversiones en un 200% y la experiencia de usuario es fenomenal."        </p>
-        <div class="flex text-yellow-400">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-      </div>
+<!--    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">-->
+<!--      &lt;!&ndash; Testimonial 1 &ndash;&gt;-->
+<!--      <div class="testimonial-card bg-gray-50 rounded-xl p-8 shadow-md">-->
+<!--        <div class="flex items-center mb-6">-->
+<!--          <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover">-->
+<!--          <div class="ml-4">-->
+<!--            <h4 class="font-bold text-gray-900">Flor de Molina</h4>-->
+<!--            <p class="text-indigo-600">CEO, Gmonster.INC</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <p class="text-gray-600 mb-6">-->
+<!--          DigitalMango transformó por completo nuestra presencia online. Nuestro nuevo sitio web ha incrementado las conversiones en un 200% y la experiencia de usuario es fenomenal."        </p>-->
+<!--        <div class="flex text-yellow-400">-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <!-- Testimonial 2 -->
-      <div class="testimonial-card bg-gray-50 rounded-xl p-8 shadow-md">
-        <div class="flex items-center mb-6">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover">
-          <div class="ml-4">
-            <h4 class="font-bold text-gray-900">Manuel Masferrer</h4>
-            <p class="text-indigo-600">Marketing Director, ESEN</p>
-          </div>
-        </div>
-        <p class="text-gray-600 mb-6">
-          "The mobile app they developed for us exceeded all expectations. Their attention to detail and user experience focus is unmatched in the industry."
-        </p>
-        <div class="flex text-yellow-400">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-      </div>
+<!--      &lt;!&ndash; Testimonial 2 &ndash;&gt;-->
+<!--      <div class="testimonial-card bg-gray-50 rounded-xl p-8 shadow-md">-->
+<!--        <div class="flex items-center mb-6">-->
+<!--          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover">-->
+<!--          <div class="ml-4">-->
+<!--            <h4 class="font-bold text-gray-900">Manuel Masferrer</h4>-->
+<!--            <p class="text-indigo-600">Marketing Director, ESEN</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <p class="text-gray-600 mb-6">-->
+<!--          "The mobile app they developed for us exceeded all expectations. Their attention to detail and user experience focus is unmatched in the industry."-->
+<!--        </p>-->
+<!--        <div class="flex text-yellow-400">-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <!-- Testimonial 3 -->
-      <div class="testimonial-card bg-gray-50 rounded-xl p-8 shadow-md">
-        <div class="flex items-center mb-6">
-          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emma Rodriguez" class="w-12 h-12 rounded-full object-cover">
-          <div class="ml-4">
-            <h4 class="font-bold text-gray-900">Emma Rodriguez</h4>
-            <p class="text-indigo-600">Founder, GreenLife</p>
-          </div>
-        </div>
-        <p class="text-gray-600 mb-6">
-          "Working with NexusWeb was a game-changer for our business. Their strategic approach to our digital marketing resulted in a 300% ROI in just 6 months."
-        </p>
-        <div class="flex text-yellow-400">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!--      &lt;!&ndash; Testimonial 3 &ndash;&gt;-->
+<!--      <div class="testimonial-card bg-gray-50 rounded-xl p-8 shadow-md">-->
+<!--        <div class="flex items-center mb-6">-->
+<!--          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emma Rodriguez" class="w-12 h-12 rounded-full object-cover">-->
+<!--          <div class="ml-4">-->
+<!--            <h4 class="font-bold text-gray-900">Emma Rodriguez</h4>-->
+<!--            <p class="text-indigo-600">Founder, GreenLife</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <p class="text-gray-600 mb-6">-->
+<!--          "Working with NexusWeb was a game-changer for our business. Their strategic approach to our digital marketing resulted in a 300% ROI in just 6 months."-->
+<!--        </p>-->
+<!--        <div class="flex text-yellow-400">-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star"></i>-->
+<!--          <i class="fas fa-star-half-alt"></i>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 
 <!-- About Section -->
 <section id="about" class="py-20 bg-gray-50">
@@ -459,39 +453,39 @@
         <form class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
               <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition">
             </div>
             <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
               <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition">
             </div>
           </div>
           <div>
-            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Asunto</label>
             <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition">
           </div>
           <div>
-            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
             <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F44336] focus:border-[#F44336] hover:border-[#F44336] transition"></textarea>
           </div>
           <div>
             <button type="submit" class="w-full bg-gradient-to-r from-[#F44336] to-[#FFCA28] text-white px-6 py-4 rounded-lg font-medium hover:from-red-700 hover:to-yellow-400 transition duration-300">
-              Send Message
+              Enviar mensaje
             </button>
           </div>
         </form>
       </div>
       <div class="lg:w-1/2">
         <div class="bg-gradient-to-br from-[#F44336] to-[#FFCA28] p-8 rounded-xl shadow-inner h-full">
-          <h3 class="text-xl font-bold text-white mb-6">Contact Information</h3>
+          <h3 class="text-xl font-bold text-white mb-6">Información de contacto</h3>
           <div class="space-y-6 text-white">
             <div class="flex items-start hover:bg-white/10 p-3 rounded-lg transition duration-300">
               <div class="flex-shrink-0 bg-red-100 rounded-lg p-3">
                 <i class="fas fa-map-marker-alt text-[#F44336]"></i>
               </div>
               <div class="ml-4">
-                <h4 class="text-sm font-semibold">ADDRESS</h4>
+                <h4 class="text-sm font-semibold">Dirección</h4>
                 <p>123 Digital Lane, Suite 400<br>San Francisco, CA 94103</p>
               </div>
             </div>
@@ -500,7 +494,7 @@
                 <i class="fas fa-phone-alt text-[#F44336]"></i>
               </div>
               <div class="ml-4">
-                <h4 class="text-sm font-semibold">PHONE</h4>
+                <h4 class="text-sm font-semibold">Teléfono</h4>
                 <p>+1 (555) 123-4567<br>Mon-Fri, 9am-5pm PST</p>
               </div>
             </div>
@@ -509,13 +503,13 @@
                 <i class="fas fa-envelope text-[#F44336]"></i>
               </div>
               <div class="ml-4">
-                <h4 class="text-sm font-semibold">EMAIL</h4>
-                <p>hello@nexusweb.com<br>We reply within 24 hours</p>
+                <h4 class="text-sm font-semibold">Correo Electrónico</h4>
+                <p>digitalmangosv@gmail.com<br>24/7</p>
               </div>
             </div>
           </div>
           <div class="mt-8">
-            <h3 class="text-xl font-bold text-white mb-4">Follow Us</h3>
+            <h3 class="text-xl font-bold text-white mb-4">Seguínos en nuestras redes sociales</h3>
             <div class="flex space-x-4">
               <a href="#" class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#F44336] hover:bg-[#FFCC80] transition">
                 <i class="fab fa-facebook-f"></i>
